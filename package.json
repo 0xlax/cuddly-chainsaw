@@ -1,7 +1,6 @@
 {
   "name": "candy-machine-mint",
   "version": "0.1.0",
-  "start_url": ".",
   "homepage": "./build",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
