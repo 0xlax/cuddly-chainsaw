@@ -166,6 +166,7 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
+    <div>
     <main style={{ backgroundColor: "gold", display: 'flex',height: "100vh"}}>
 
 
@@ -236,6 +237,7 @@ const Home = (props: HomeProps) => {
             </Snackbar>
             </div>
     </main>
+    </div>
   );
 };
 
