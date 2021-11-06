@@ -166,7 +166,7 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
-    <div>
+    <div id="container">
     <main style={{ backgroundColor: "gold", display: 'flex',height: "100vh"}}>
 
 
