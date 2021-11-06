@@ -166,60 +166,75 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
-    <main>
-      {wallet && (
-        <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
-      )}
+    <main style={{ backgroundColor: "gold", display: 'flex',height: "100vh"}}>
 
-      {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
 
-      {wallet && <p>Total Available: {itemsAvailable}</p>}
 
-      {wallet && <p>Redeemed: {itemsRedeemed}</p>}
+    <div style={{  padding: "30px", display: "flex", flex: 1,  flexDirection: "column"}}>
+          <div style={{ display : "flex", justifyContent: "space-between"}}>
+            <h2 style= {{color: "black" }}>Baby Bananas</h2>
+            <div></div>
+            <ConnectButton>{wallet ? "Connected" : "Connect Wallet"}</ConnectButton>
+          </div>
+          <div style={{ backgroundColor: "blue", flex: 1,display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+            <MintContainer>
+            {wallet && (
+                <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
+              )}
 
-      {wallet && <p>Remaining: {itemsRemaining}</p>}
+            {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
 
-      <MintContainer>
-        {!wallet ? (
-          <ConnectButton>Connect Wallet</ConnectButton>
-        ) : (
-          <MintButton
-            disabled={isSoldOut || isMinting || !isActive}
-            onClick={onMint}
-            variant="contained"
-          >
-            {isSoldOut ? (
-              "SOLD OUT"
-            ) : isActive ? (
-              isMinting ? (
-                <CircularProgress />
-              ) : (
-                "MINT"
-              )
-            ) : (
-              <Countdown
-                date={startDate}
-                onMount={({ completed }) => completed && setIsActive(true)}
-                onComplete={() => setIsActive(true)}
-                renderer={renderCounter}
-              />
-            )}
-          </MintButton>
-        )}
-      </MintContainer>
+                <MintButton
+                  disabled={isSoldOut || isMinting || !isActive}
+                  onClick={onMint}
+                  variant="contained"
+                >
+                  {isSoldOut ? (
+                    "SOLD OUT"
+                  ) : isActive ? (
+                    isMinting ? (
+                      <CircularProgress />
+                    ) : (
+                      "MINT NOW"
+                    )
+                  ) : (
+                    <Countdown
+                      date={startDate}
+                      onMount={({ completed }) => completed && setIsActive(true)}
+                      onComplete={() => setIsActive(true)}
+                      renderer={renderCounter}
+                    />
+                  )}
+                </MintButton>
 
-      <Snackbar
-        open={alertState.open}
-        autoHideDuration={6000}
-        onClose={() => setAlertState({ ...alertState, open: false })}
-      >
-        <Alert
-          onClose={() => setAlertState({ ...alertState, open: false })}
-          severity={alertState.severity}
-        >
-          {alertState.message}
-        </Alert>
-      </Snackbar>
+            </MintContainer>
+
+            <div>
+
+
+            {wallet && <p>( Remaining : {itemsRemaining} )</p>}
+          </div>
+
+
+
+
+          </div>
+
+
+
+            <Snackbar
+              open={alertState.open}
+              autoHideDuration={6000}
+              onClose={() => setAlertState({ ...alertState, open: false })}
+            >
+              <Alert
+                onClose={() => setAlertState({ ...alertState, open: false })}
+                severity={alertState.severity}
+              >
+                {alertState.message}
+              </Alert>
+            </Snackbar>
+            </div>
     </main>
   );
 };
