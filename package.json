@@ -1,6 +1,6 @@
 {
   "name": "candy-machine-mint",
-  "homepage": " https://0xlax.github.io/cuddly-chainsaw/",
+  "homepage": " https://0xlax.github.io/cuddly-chainsaw",
   "version": "0.1.0",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
