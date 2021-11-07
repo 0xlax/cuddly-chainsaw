@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cuddly-chainsaw/static/css/main.9793fe9d.chunk.css",
+    "main.js": "/cuddly-chainsaw/static/js/main.dd969ad4.chunk.js",
+    "main.js.map": "/cuddly-chainsaw/static/js/main.dd969ad4.chunk.js.map",
+    "runtime-main.js": "/cuddly-chainsaw/static/js/runtime-main.9e8d1c02.js",
+    "runtime-main.js.map": "/cuddly-chainsaw/static/js/runtime-main.9e8d1c02.js.map",
+    "static/js/2.2b6510ff.chunk.js": "/cuddly-chainsaw/static/js/2.2b6510ff.chunk.js",
+    "static/js/2.2b6510ff.chunk.js.map": "/cuddly-chainsaw/static/js/2.2b6510ff.chunk.js.map",
+    "static/js/3.8dfcd814.chunk.js": "/cuddly-chainsaw/static/js/3.8dfcd814.chunk.js",
+    "static/js/3.8dfcd814.chunk.js.map": "/cuddly-chainsaw/static/js/3.8dfcd814.chunk.js.map",
+    "index.html": "/cuddly-chainsaw/index.html",
+    "static/css/main.9793fe9d.chunk.css.map": "/cuddly-chainsaw/static/css/main.9793fe9d.chunk.css.map",
+    "static/js/2.2b6510ff.chunk.js.LICENSE.txt": "/cuddly-chainsaw/static/js/2.2b6510ff.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9e8d1c02.js",
+    "static/js/2.2b6510ff.chunk.js",
+    "static/css/main.9793fe9d.chunk.css",
+    "static/js/main.dd969ad4.chunk.js"
+  ]
+}
