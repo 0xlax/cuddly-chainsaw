@@ -166,18 +166,27 @@ const Home = (props: HomeProps) => {
   ]);
 
   return (
-    <div id="container">
+    <div id="container" style = {{ paddingTop: "3px", margin: "auto"}}>
     <main style={{ backgroundColor: "gold", display: 'flex',height: "100vh"}}>
 
 
 
-    <div style={{  padding: "30px", display: "flex", flex: 1,  flexDirection: "column"}}>
+    <div id = "center" style={{  padding: "30px", display: "flex", flex: 1,  flexDirection: "column"}}>
           <div style={{ display : "flex", justifyContent: "space-between"}}>
-            <h2 style= {{color: "black" }}>Baby Bananas</h2>
-            <div></div>
-            <ConnectButton>{wallet ? "Connected" : "Connect Wallet"}</ConnectButton>
+            <h2 id = "bananas" style= {{color: "black" }}>Baby Bananas</h2>
+            
+
+
+
+
+            <div>
+              <ConnectButton id = "connectooor">{wallet ? "Connected" : "Connect Wallet"}</ConnectButton>
+            </div>
+
+            
+            
           </div>
-          <div style={{ backgroundColor: "blue", flex: 1,display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+          <div style={{ paddingTop: "3px", backgroundColor: "blue", flex: 1,display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
             <MintContainer>
             {wallet && (
                 <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
