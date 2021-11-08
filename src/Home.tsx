@@ -173,18 +173,25 @@ const Home = (props: HomeProps) => {
 
     <div id = "center" style={{  padding: "30px", display: "flex", flex: 1,  flexDirection: "column"}}>
           <div style={{ display : "flex", justifyContent: "space-between"}}>
-            <h2 id = "bananas" style= {{color: "black" }}>BABY BANANAS</h2>
+            <h2 id = "bananas" style= {{color: "Black" }}>BABY BANANAS</h2>
             
             <div>
               <ConnectButton id = "connectooor">{wallet ? "Connected" : "Connect Wallet"}</ConnectButton>
             </div>
             
           </div>
-          <div id = "head" style={{ paddingTop: "10px",  backgroundColor: "blue", flex: 1,display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+          <div id = "head" style={{ paddingTop: "10px",  backgroundColor: "pink", flex: 1,display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+
+          <div className="banana">
+          <img src='https://i.imgur.com/pRK2n5n.gif'/>
+           </div>
+
+
             <MintContainer className = "mintbuttons" style = {{
   alignItems: "center"}}>
             <h1> BABY BANANAS </h1>
             <h1>      0.2 SOL EACH</h1>
+            
             {wallet && (
                 <p>Address:  {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
               )}
@@ -248,6 +255,10 @@ const Home = (props: HomeProps) => {
           <div id = "twitter" className ="button_cont text-center" >
             <a className = "jointwtr" href="https://twitter.com/BabyBananasNFT">Join Twitter</a> 
           </div>
+
+          <section id="faq">
+          <h1> This is FAQ</h1>
+          </section>
 
 
           </div>

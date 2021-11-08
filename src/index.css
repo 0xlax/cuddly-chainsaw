@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #303030;
+  background-color: #f4cscs;
   color: #FFFFFF;
 
 }
@@ -99,6 +99,7 @@ code {
 
 .mintbuttons {
 
+
   position: absolute;
   left:  400px
 }
@@ -141,7 +142,7 @@ h2{
 
 }
 .mintnow:hover {
-  background: #434343;
+  background: #f4cscs;
   letter-spacing: 1px;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
@@ -149,3 +150,10 @@ h2{
   transition: all 0.4s ease 0s;
 }
 
+
+
+.banana{
+     float:left;
+     width: 12px;
+     display:block;    
+}
