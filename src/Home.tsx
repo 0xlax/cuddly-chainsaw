@@ -167,34 +167,33 @@ const Home = (props: HomeProps) => {
 
   return (
     <div id="container" style = {{ paddingTop: "3px", margin: "auto"}}>
-    <main style={{ backgroundColor: "gold", display: 'flex',height: "100vh"}}>
+    <main style={{ backgroundColor: "#FFFF66", display: 'flex',height: "100vh"}}>
 
 
 
     <div id = "center" style={{  padding: "30px", display: "flex", flex: 1,  flexDirection: "column"}}>
           <div style={{ display : "flex", justifyContent: "space-between"}}>
-            <h2 id = "bananas" style= {{color: "black" }}>Baby Bananas</h2>
+            <h2 id = "bananas" style= {{color: "black" }}>BABY BANANAS</h2>
             
-
-
-
-
             <div>
               <ConnectButton id = "connectooor">{wallet ? "Connected" : "Connect Wallet"}</ConnectButton>
             </div>
-
-            
             
           </div>
-          <div style={{ paddingTop: "3px", backgroundColor: "blue", flex: 1,display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
-            <MintContainer>
+          <div id = "head" style={{ paddingTop: "10px",  backgroundColor: "blue", flex: 1,display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+            <MintContainer className = "mintbuttons" style = {{
+  alignItems: "center"}}>
+            <h1> BABY BANANAS </h1>
+            <h1>      0.2 SOL EACH</h1>
             {wallet && (
-                <p>Wallet {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
+                <p>Address:  {shortenAddress(wallet.publicKey.toBase58() || "")}</p>
               )}
 
             {wallet && <p>Balance: {(balance || 0).toLocaleString()} SOL</p>}
 
                 <MintButton
+                  className = "mintnow"
+                
                   disabled={isSoldOut || isMinting || !isActive}
                   onClick={onMint}
                   variant="contained"
@@ -215,16 +214,17 @@ const Home = (props: HomeProps) => {
                       renderer={renderCounter}
                     />
                   )}
+
                 </MintButton>
+            {wallet && <p>( Remaining : {itemsRemaining} )</p>}
+
 
             </MintContainer>
 
             <div>
 
 
-            {wallet && <p>( Remaining : {itemsRemaining} )</p>}
           </div>
-
 
 
 
@@ -244,8 +244,20 @@ const Home = (props: HomeProps) => {
                 {alertState.message}
               </Alert>
             </Snackbar>
-            </div>
+          
+          <div id = "twitter" className ="button_cont text-center" >
+            <a className = "jointwtr" href="https://twitter.com/BabyBananasNFT">Join Twitter</a> 
+          </div>
+
+
+          </div>
+
+
+
+
     </main>
+
+
     </div>
   );
 };
