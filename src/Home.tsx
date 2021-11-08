@@ -256,17 +256,23 @@ const Home = (props: HomeProps) => {
             <a className = "jointwtr" href="https://twitter.com/BabyBananasNFT">Join Twitter</a> 
           </div>
 
-          <section id="faq">
-          <h1> This is FAQ</h1>
-          </section>
-
-
           </div>
 
 
 
 
+
     </main>
+
+    <section className="faq">
+
+          <div>
+          <h1> harhsith </h1>
+          
+          </div>
+
+          </section>
+
 
 
     </div>
