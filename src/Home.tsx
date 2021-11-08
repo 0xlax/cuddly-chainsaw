@@ -293,4 +293,12 @@ const renderCounter = ({ days, hours, minutes, seconds, completed }: any) => {
   );
 };
 
+// Check for mobile user agent
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+if (mobile) {
+    alert("Please switch to Desktop View");              
+} else {
+    
+}  
+
 export default Home;
