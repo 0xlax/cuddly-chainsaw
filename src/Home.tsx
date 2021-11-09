@@ -291,7 +291,7 @@ const Home = (props: HomeProps) => {
         <details>
           <summary> WHAT ARE YOUR PLANS AFTER MINT? </summary>
           <div className="faq_content">
-          <p> Listing and airdropping $BBNANA tokens to holders</p>
+          <p> Listing and airdropping $BBNANA tokens to holders. <br/> Banana Holders Together = Strong</p>
           </div>
         </details>
         <details>
