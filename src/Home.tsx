@@ -167,13 +167,15 @@ const Home = (props: HomeProps) => {
 
   return (
     <div id="container" style = {{ paddingTop: "3px", margin: "auto"}}>
-    <main style={{ backgroundColor: "#FFFF66", display: 'flex',height: "100vh"}}>
+    <main style={{ backgroundColor: "#FFFFE0", display: 'flex',height: "100vh"}}>
 
 
 
     <div id = "center" style={{  padding: "30px", display: "flex", flex: 1,  flexDirection: "column"}}>
           <div style={{ display : "flex", justifyContent: "space-between"}}>
             <h2 id = "bananas" style= {{color: "Black" }}>BABY BANANAS</h2>
+
+            <img className = "head" src="favicon.ico"/>
             
             <div>
               <ConnectButton id = "connectooor">{wallet ? "Connected" : "Connect Wallet"}</ConnectButton>
@@ -253,8 +255,12 @@ const Home = (props: HomeProps) => {
             </Snackbar>
           
           <div id = "twitter" className ="button_cont text-center" >
-            <a className = "jointwtr" href="https://twitter.com/BabyBananasNFT">Join Twitter</a> 
+            <a className = "jointwtr" style = {{margin: "16px"}} href="https://twitter.com/BabyBananasNFT">Join Twitter</a>
+
+            <a className = "jointwtr" style = {{margin: "16px"}} href="https://twitter.com/BabyBananasNFT"> Join Discord</a> 
+
           </div>
+
 
           </div>
 
@@ -265,13 +271,60 @@ const Home = (props: HomeProps) => {
     </main>
 
     <section className="faq">
+    <h1>                 </h1>
+    <h1> <br/> FREQUENTLY ASKED QUESTIONS </h1>
+        <section className= "faqmain">
 
-          <div>
-          <h1> harhsith </h1>
-          
+          <details>
+            <summary> ARE YOU AFFILIATED WITH SOLANA BANANAS? </summary>
+            <div className="faq_content">
+            <p>No, but they are our parents and we love them </p>
+            </div>
+          </details>
+
+        <details>
+          <summary> WHAT SOLANA WALLET IS SUPPORTED? </summary>
+          <div className="faq_content">
+          <p>Phantom (recommended), Slope, Solfare and Sollet</p>
           </div>
+        </details>
+        <details>
+          <summary> WHAT ARE YOUR PLANS AFTER MINT? </summary>
+          <div className="faq_content">
+          <p> Listing and airdropping $BBNANA tokens to holders</p>
+          </div>
+        </details>
+        <details>
+          <summary> HOW MUCH IS MINT </summary>
+          <div className="faq_content">
+          <p>Mint is 0.2 sol</p>
+          </div>
+        </details>
+        <details>
+          <summary> HOW MANY BABY BANANAS ARE THERE? </summary>
+          <div className="faq_content">
+          <p>1500 - One for each Solana Banana</p>
+          </div>
+        </details>
+        <details>
+          <summary> ANY ROYALTIES ON SECONDARY SALES? </summary>
+          <div className="faq_content">
+          <p>2.5%</p>
+          </div>
+        </details>
+        <details>
+          <summary> WEN MARKETPLACE? </summary>
+          <div className="faq_content">
+          <p> As soon as we're sold out</p>
+          </div>
+        </details>
 
-          </section>
+
+        </section>
+
+
+
+    </section>
 
 
 
