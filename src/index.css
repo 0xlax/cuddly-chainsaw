@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #FFFFE0;
   color: #FFFFFF;
+  -moz-transform: scale(0.8, 0.8);
+  zoom: 0.8;
+  zoom: 80%;
 
 }
 
