@@ -257,7 +257,7 @@ const Home = (props: HomeProps) => {
           <div id = "twitter" className ="button_cont text-center" >
             <a className = "jointwtr" style = {{margin: "16px"}} href="https://twitter.com/BabyBananasNFT">Join Twitter</a>
 
-            <a className = "jointwtr" style = {{margin: "16px"}} href="https://twitter.com/BabyBananasNFT"> Join Discord</a> 
+            <a className = "jointwtr" style = {{margin: "16px"}} href="https://discord.gg/Rx3FRz3dHj"> Join Discord</a> 
 
           </div>
 
@@ -349,7 +349,7 @@ const renderCounter = ({ days, hours, minutes, seconds, completed }: any) => {
 // Check for mobile user agent
 var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
 if (mobile) {
-    alert("Please switch to Desktop View");              
+    alert("Mobile is not supported, Please switch to Desktop View");              
 } else {
     
 }  
